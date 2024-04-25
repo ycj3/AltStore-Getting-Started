@@ -1,4 +1,5 @@
 # AltStore-Getting-Started
+> [官网英文文档说明](https://faq.altstore.io/getting-started/how-to-install-altstore-macos)  
 本文将介绍如何借助Mac，实现在iOS设备上安装App IPA的过程
 
 ## 必备：
@@ -53,6 +54,14 @@
 
 <img width="457" alt="image" src="https://github.com/CarlsonYuan/AltStore-Getting-Started/assets/123744402/87ec3370-4508-467f-be37-abd5c4743ad4">
 
+## 常见问题及解决方案
+### The name "XXX" contains invalid character
+问题原因：由于IPA包的Bundle display name 包含非英文字符。  
+解决方式：
+* ipa包重命名为zip文件，解压。
+* 进入Payload，右键显示包内容
+* 修改里面的 info.plist文件 的 CFBundleDisplayName的值为英文（不能为中文），修改后保存文件
+* 将Payload 文件夹重新压缩成 zip，并重命名为ipa。即可正常安装。
 
 ## 写在最后
 这就是这篇教程的全部内容，如果对你有帮助，感谢Star～  
