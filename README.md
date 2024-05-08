@@ -1,5 +1,7 @@
 # AltStore-Getting-Started
+
 > [官网英文文档说明](https://faq.altstore.io/getting-started/how-to-install-altstore-macos)  
+
 本文将介绍如何借助Mac，实现在iOS设备上安装App IPA的过程
 
 ## 必备：
@@ -61,6 +63,9 @@
 * ipa包重命名为zip文件，解压。
 * 进入Payload，右键显示包内容
 * 修改里面的 info.plist文件 的 CFBundleDisplayName的值为英文（不能为中文），修改后保存文件
+Mac命令行修改:
+> /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName 这里输入英文名" Info.plist
+
 * 将Payload 文件夹重新压缩成 zip，并重命名为ipa。即可正常安装。
 
 ## 写在最后
