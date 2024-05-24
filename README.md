@@ -66,7 +66,12 @@
 Mac命令行修改:
 > /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName 这里输入英文名" Info.plist
 
-* 将Payload 文件夹重新压缩成 zip，并重命名为ipa。即可正常安装。
+### 登录提示：你的应用版本过低，请升级至最新版本后再登录。点击“确认”后将跳转至最新下载页面
+解决方案：用最新的ipa尝试看下（亲测V8.0.49 在iOS 15.8.2上有效, V8.0.33会提示上面登录错误）
+  
+
+### The name "XXX" contains invalid character
+
 
 ## 写在最后
 这就是这篇教程的全部内容，如果对你有帮助，感谢Star～  
